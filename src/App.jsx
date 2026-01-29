@@ -20,10 +20,12 @@ import {
   BarChart4
 } from 'lucide-react';
 import { cn } from './lib/utils';
+import jaimePhoto from './assets/jaime-jaramillo.png';
+
 
 // --- Constants ---
 const PAYMENT_LINK = "https://go.hotmart.com/A103952710T";
-const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=3113423740&text=Quiero%20mas%20informacion%20del%20curso%20de%20Inversion%20en%20bolsa";
+const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=3113423740&text=Hola%20Diego%20tengo%20preguntas%20sobre%20el%20curso";
 const VIDEO_ID = "DfugZeziq-Q";
 
 // --- Components ---
@@ -344,9 +346,9 @@ const App = () => {
             >
               <div className="absolute -inset-6 border-2 border-yellow-500/30 rounded-[3rem] -rotate-3" />
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800"
+                src={jaimePhoto}
                 alt="Jaime Jaramillo"
-                className="rounded-[2.5rem] relative w-full shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+                className="rounded-[2.5rem] relative w-full shadow-2xl hover:scale-[1.02] transition-all duration-700"
               />
               <div className="absolute -bottom-10 -left-10 bg-yellow-500 text-black p-8 rounded-3xl shadow-2xl">
                 <div className="text-4xl font-black">35+</div>
@@ -549,7 +551,10 @@ const App = () => {
             </p>
           </div>
           <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-bold uppercase tracking-widest">
-            <p>© 2026 Jaime Jaramillo & Finanzas Emocionales. Todos los derechos reservados.</p>
+            <div className="space-y-2">
+              <p>© 2026 Jaime Jaramillo & Finanzas Emocionales. Todos los derechos reservados.</p>
+              <p className="text-yellow-500/50">Desarrollado por Dmente Digital</p>
+            </div>
             <div className="flex gap-8">
               <a href="#" className="hover:text-yellow-500 transition-colors">Términos</a>
               <a href="#" className="hover:text-yellow-500 transition-colors">Privacidad</a>

@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/LANDING-INVERSION-EN-BOLSA-2026/',
   plugins: [
     react(),
     tailwindcss(),
